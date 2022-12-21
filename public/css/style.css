@@ -1,0 +1,15 @@
+.bodyHome {
+    background-color: white;
+    /* background-image: url('https://img.freepik.com/premium-vector/quiz-comic-pop-art-style_175838-505.jpg?w=2000'); */
+    /* background-size: 100%; */
+}
+
+/* .bodyHome img {
+    width: 1000px;
+    height: 100px;
+} */
+
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
