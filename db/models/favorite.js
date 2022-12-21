@@ -22,6 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     user_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
+      allowNull: false,
+      onDelete: 'CASCADE',
       references: {
         modelName: 'Users',
         key: 'id',
@@ -30,6 +32,7 @@ module.exports = (sequelize, DataTypes) => {
     house_id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
+      allowNull: false,
       onDelete: 'CASCADE',
       references: {
         modelName: 'Houses',
