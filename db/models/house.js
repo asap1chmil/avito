@@ -1,7 +1,7 @@
-'use strict';
 const {
-  Model
+  Model,
 } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   class House extends Model {
     /**
@@ -9,20 +9,47 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      // define association here
+    static associate({ User, Favorite }) {
+      House.User = House.belongsTo(User, {
+        foreignKey: 'user_id',
+      });
+      House.Favorite = House.hasMany(Favorite, {
+        foreignKey: 'house_id',
+      });
     }
   }
   House.init({
-    type: DataTypes.TEXT,
-    description: DataTypes.TEXT,
-    price: DataTypes.INTEGER,
-    photo: DataTypes.TEXT,
-    address: DataTypes.TEXT,
-    user_id: DataTypes.INTEGER
+    type: {
+      type: DataTypes.TEXT,
+    },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    photo: {
+      type: DataTypes.TEXT,
+    },
+    address: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      onDelete: 'CASCADE',
+      primaryKey: true,
+      references: {
+        model: 'Users',
+        key: 'id',
+      },
+    },
   }, {
     sequelize,
     modelName: 'House',
+    tableName: 'Houses',
   });
   return House;
 };
