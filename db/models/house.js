@@ -1,6 +1,11 @@
-const {
-  Model,
-} = require('sequelize');
+const { Model } = require('sequelize');
+
+/**
+ * Photos
+ * id    house_id     path
+ * 1      1           "/img/1.1.jpg"
+ * 2      1           "/img/1.3.jpg"
+ */
 
 module.exports = (sequelize, DataTypes) => {
   class House extends Model {
@@ -18,39 +23,47 @@ module.exports = (sequelize, DataTypes) => {
       });
     }
   }
-  House.init({
-    type: {
-      type: DataTypes.TEXT,
-    },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
-    price: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    photo: {
-      type: DataTypes.TEXT,
-    },
-    address: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      allowNull: false,
-      onDelete: 'CASCADE',
-      references: {
-        model: 'Users',
-        key: 'id',
+  House.init(
+    {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: DataTypes.INTEGER,
+      },
+      type: {
+        type: DataTypes.TEXT,
+      },
+      description: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+      },
+      price: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      photo: {
+        type: DataTypes.TEXT,
+      },
+      address: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+      },
+      user_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Users',
+          key: 'id',
+        },
       },
     },
-  }, {
-    sequelize,
-    modelName: 'House',
-    tableName: 'Houses',
-  });
+    {
+      sequelize,
+      modelName: 'House',
+      tableName: 'Houses',
+    }
+  );
   return House;
 };
