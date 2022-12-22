@@ -4,6 +4,7 @@ const Layout = require('../Layout');
 module.exports = function LoginPage({ user }) {
   return (
     <Layout user={user}>
+      <div id="error_log" style={{ color: 'red', fontSize: '36px' }} />
       <form action="/auth/login" method="POST" id="loginForm">
         <div className="mb-3">
           <label htmlFor="exampleInputLogin1" className="form-label">
@@ -34,6 +35,7 @@ module.exports = function LoginPage({ user }) {
           Submit
         </button>
       </form>
+      <script src="/js/loginPage.js" defer />
     </Layout>
   );
 };

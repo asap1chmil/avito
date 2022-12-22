@@ -15,11 +15,6 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
-      email: {
-        type: Sequelize.TEXT,
-        unique: true,
-        allowNull: false,
-      },
       login: {
         type: Sequelize.TEXT,
         allowNull: false,
@@ -27,6 +22,14 @@ module.exports = {
       password: {
         type: Sequelize.TEXT,
         allowNull: false,
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
       },
     });
   },
