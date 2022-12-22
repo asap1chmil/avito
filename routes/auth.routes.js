@@ -39,7 +39,7 @@ authRouter.post('/login', async (req, res) => {
   }
 });
 
-authRouter.get('/', async (req, res) => {
+authRouter.get('/register', async (req, res) => {
   try {
     res.renderComponent(RegisterPage);
   } catch (error) {
@@ -48,7 +48,7 @@ authRouter.get('/', async (req, res) => {
   }
 });
 
-authRouter.post('/', async (req, res) => {
+authRouter.post('/register', async (req, res) => {
   try {
     const user = await User.findOne({
       where: { login: req.body.login },
