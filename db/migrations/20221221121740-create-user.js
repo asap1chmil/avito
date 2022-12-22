@@ -15,11 +15,6 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
-      email: {
-        type: Sequelize.TEXT,
-        unique: true,
-        allowNull: false,
-      },
       login: {
         type: Sequelize.TEXT,
         allowNull: false,

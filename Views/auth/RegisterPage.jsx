@@ -19,18 +19,6 @@ module.exports = function RegisterPage({ user }) {
         </div>
         <div className="mb-3">
           <label htmlFor="exampleInputLogin1" className="form-label">
-            Email
-          </label>
-          <input
-            className="form-control"
-            id="exampleInputLogin1"
-            aria-describedby="loginHelp"
-            name="email"
-            autoComplete="on"
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="exampleInputLogin1" className="form-label">
             Login
           </label>
           <input

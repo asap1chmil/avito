@@ -2,7 +2,7 @@ const form = document.getElementById('registerForm');
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const {
-    name, email, login, password, passwordRepeat,
+    name, login, password, passwordRepeat,
   } = event.target;
 
   const response = await fetch('/auth/register', {
@@ -13,13 +13,14 @@ form.addEventListener('submit', async (event) => {
     body: JSON.stringify({
       name: name.value,
       login: login.value,
-      email: email.value,
       password: password.value,
       passwordRepeat: passwordRepeat.value,
     }),
   });
   const data = await response.json();
-  console.log(data.message);
+  if (data.status === 'error') {
+    alert(data.message);
+  }
   if (data.message === 'success') {
     window.location.href = '/';
   } else {
