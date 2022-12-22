@@ -3,27 +3,24 @@ require('dotenv').config();
 const bcrypt = require('bcrypt');
 
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert(
-      'Users',
-      [
-        {
-          name: 'Artem',
-          email: 'demo@gmail.com',
-          login: 'ArtemV',
-          passworrd: await bcrypt.hash(process.env.DEMO_PASS, saltRounds),
-        },
-      ],
-      {}
-    );
-  },
+  async up(queryInterface) {
+    const rawPassword = process.env.DEMO_PASSWORD || 'test_password';
+    const saltRounds = Number(process.env.SALT_ROUNDS) || 10;
+    const hashedPassword = await bcrypt.hash(rawPassword, saltRounds);
 
-  async down(queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    const user = {
+      status: 'false',
+      name: 'User1',
+      login: process.env.DEMO_USER || 'test_user',
+      email: 'user@mail.com',
+      password: hashedPassword,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    await queryInterface.bulkInsert('Users', [user]);
+  },
+  async down(queryInterface) {
+    await queryInterface.bulkDelete('Users');
   },
 };
