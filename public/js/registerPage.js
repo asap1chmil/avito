@@ -25,7 +25,7 @@ form.addEventListener('submit', async (event) => {
     window.location.href = '/';
   } else {
     const errorMessage = await response.text();
-    console.log(errorMessage);
+    (errorMessage);
     alert(errorMessage);
   }
 });

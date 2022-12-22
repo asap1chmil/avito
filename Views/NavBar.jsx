@@ -50,7 +50,7 @@ module.exports = function NavBar() {
             {user && (
               <li className="nav-item">
                 <a className="nav-link" href="/office">
-                  Personal Office
+                  Favorites
                 </a>
               </li>
             )}
