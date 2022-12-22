@@ -1,6 +1,7 @@
 require('dotenv').config();
 require('@babel/register');
 const express = require('express');
+const path = require('path');
 const expressConfig = require('./config/express');
 const { sequelize } = require('./db/models');
 const mainRouter = require('./routes/main.routes');
@@ -10,6 +11,9 @@ const logoutRouter = require('./routes/logout.routes');
 
 const app = express();
 expressConfig(app);
+app.use(express.json({ exetende: true }));
+app.use('/img', require.static(path.join('./public/img')));
+app.use('api', require('./routes/upload.routes'));
 
 app.use('/', mainRouter);
 app.use('/auth', loginRouter);
