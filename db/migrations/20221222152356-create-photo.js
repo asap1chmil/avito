@@ -11,6 +11,7 @@ module.exports = {
       },
       house_id: {
         type: Sequelize.INTEGER,
+        foreignKey: true,
         references: {
           model: 'Houses',
           key: 'id',
