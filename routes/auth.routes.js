@@ -51,7 +51,7 @@ authRouter.get('/register', async (req, res) => {
 authRouter.post('/register', async (req, res) => {
   try {
     const user = await User.findOne({
-      where: { login: req.body.login },
+      where: { email: req.body.email },
     });
     if (user) {
       return res.status(420).send('Пользователь с таким логином уже существует');
@@ -61,6 +61,7 @@ authRouter.post('/register', async (req, res) => {
     }
     const newUser = await User.create({
       name: req.body.name,
+      email: req.body.email,
       login: req.body.login,
       password: await bcrypt.hash(req.body.password, 10),
     });

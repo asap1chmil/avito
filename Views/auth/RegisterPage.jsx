@@ -14,6 +14,19 @@ module.exports = function RegisterPage({ user }) {
             id="exampleInputLogin1"
             aria-describedby="loginHelp"
             name="name"
+            autoComplete="off"
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="exampleInputLogin1" className="form-label">
+            Email
+          </label>
+          <input
+            className="form-control"
+            id="exampleInputLogin1"
+            aria-describedby="loginHelp"
+            name="email"
+            autoComplete="on"
           />
         </div>
         <div className="mb-3">
@@ -25,6 +38,7 @@ module.exports = function RegisterPage({ user }) {
             id="exampleInputLogin1"
             aria-describedby="loginHelp"
             name="login"
+            autoComplete="off"
           />
         </div>
         <div className="mb-3">
@@ -39,6 +53,7 @@ module.exports = function RegisterPage({ user }) {
             className="form-control"
             id="exampleInputPassword2"
             name="password"
+            autoComplete="off"
           />
         </div>
         <div className="mb-3">
@@ -53,6 +68,7 @@ module.exports = function RegisterPage({ user }) {
             className="form-control"
             id="exampleInputPassword2"
             name="passwordRepeat"
+            autoComplete="off"
           />
         </div>
         <button type="submit" className="btn btn-secondary">
