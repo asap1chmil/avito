@@ -32,7 +32,7 @@ module.exports = function NavBar() {
             )}
             {!user && (
               <li className="nav-item">
-                <a className="nav-link" href="/register">
+                <a className="nav-link" href="/auth/register">
                   Register
                 </a>
               </li>
