@@ -12,7 +12,6 @@ module.exports = {
       status: 'false',
       name: 'User1',
       login: process.env.DEMO_USER || 'test_user',
-      email: 'user@mail.com',
       password: hashedPassword,
       createdAt: new Date(),
       updatedAt: new Date(),
