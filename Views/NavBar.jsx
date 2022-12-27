@@ -49,7 +49,7 @@ module.exports = function NavBar() {
             )}
             {user && (
               <li className="nav-item">
-                <a className="nav-link" href="/office">
+                <a className="nav-link" href="/favorites">
                   Favorites
                 </a>
               </li>

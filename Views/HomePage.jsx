@@ -1,9 +1,15 @@
 const React = require('react');
 const Layout = require('./Layout');
+const House = require('./House');
 
-function HomePage({ posts, user }) {
+function HomePage({ house, user }) {
   return (
-    <Layout title="Home Page" user={user}> 
+    <Layout title="HomePage" user={user}>
+      {/* <div id="blockHouses">
+        {house.map((el) => (
+          <House key={el.id} house={el} />
+        ))}
+      </div> */}
     </Layout>
   );
 }
