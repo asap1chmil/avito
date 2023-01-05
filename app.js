@@ -9,16 +9,16 @@ const loginRouter = require('./routes/login.routes');
 const registerRouter = require('./routes/register.routes');
 const logoutRouter = require('./routes/logout.routes');
 // const houseRouter = require('./routes/house.router');
-const favoritesRouter = require('./routes/house.router');
+const favoritesRouter = require('./routes/favorites.router');
 
 const app = express();
 expressConfig(app);
 app.use(express.json({ exetende: true }));
-app.use('/img', require.static(path.join('./public/img')));
+// app.use('/img', require.static(path.join('./public/img')));
 app.use('api', require('./routes/upload.routes'));
 
 app.use('/', mainRouter);
-app.use('/favorites', favoritesRouter);
+app.use('/', favoritesRouter);
 app.use('/auth', loginRouter);
 app.use('/auth', registerRouter);
 app.use('/auth', logoutRouter);

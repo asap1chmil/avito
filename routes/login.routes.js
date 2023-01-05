@@ -28,10 +28,9 @@ authRouter.post('/login', async (req, res) => {
     });
     if (user && await bcrypt.compare(req.body.password, user.password)) {
       req.session.userId = user.id;
-      res.redirect('/');
-    } else {
-      return res.json({ status: 'error', message: 'Пользователь не зарегестрирован' });
+      return res.json({ status: 'success' });
     }
+    return res.json({ status: 'error', message: 'Пользователь не зарегестрирован' });
   } catch (error) {
     console.error(error);
     res.sendStatus(500);

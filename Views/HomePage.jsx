@@ -1,16 +1,23 @@
+const { useContext } = require('react');
 const React = require('react');
+const LocalsContext = require('../middlewares/LocalsContext');
+const Card = require('./Card');
 const Layout = require('./Layout');
-const House = require('./House');
 
-function HomePage({ house, user }) {
+function HomePage({ houses }) {
+  const { user } = useContext(LocalsContext);
   return (
-    <Layout title="HomePage" user={user}>
-      {/* <div id="blockHouses">
-        {house.map((el) => (
-          <House key={el.id} house={el} />
+    <Layout>
+      {' '}
+      {user && (
+      <div id="blockProducts">
+        {houses.map((house) => (
+          <Card key={house.id} house={house} />
         ))}
-      </div> */}
+      </div>
+      )}
     </Layout>
+
   );
 }
 
