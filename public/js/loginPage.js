@@ -22,7 +22,6 @@ if (logForm) {
       window.location.assign('/');
     } else {
       const errorMessage = await response.text();
-      console.log(errorMessage);
       alert(errorMessage);
     }
   });
