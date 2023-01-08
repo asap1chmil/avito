@@ -26,7 +26,7 @@
   font-size: 140%;
   font-weight: bold;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 2px #212121;
+  text-shadow: 2px 2px 2px #111111;
 }
 
 .navbar-brand:hover{
@@ -44,6 +44,7 @@
   font-size: 400%;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
 .textMoving {
@@ -73,7 +74,7 @@
 
 .jumbotron1 {
   color: white;
-  text-shadow: 5px 5px 5px #212121;
+  text-shadow: 5px 5px 5px #111111;
   height: 400px;
   /* background-image: url(https://www.remontbp.com/wp-content/uploads/2020/05/120-900x600.jpg); */
   /* background-image: url(https://idei.club/uploads/posts/2021-03/1616127835_47-p-temno-serie-steni-54.jpg); */
@@ -106,7 +107,7 @@ footer{
 .post,
 .owls,
 .all-right {
-    color: #808080;
+    color: #2a2a2a;
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-align: center;
@@ -151,16 +152,16 @@ body {
     /* width: 75%; */
 }
 
-.btn{
+#btn-reg{
     font-size: 100%;
     letter-spacing: 1px;
 }
 
-@font-face {
+/* @font-face {
   font-family: birchctt;
   src: url('./fonts/birchctt.ttf') format('ttf'),
     url('./fonts/birchctt.woff') format('woff');
-}
+} */
 
 @font-face {
   font-family: Szlichta;
@@ -168,11 +169,11 @@ body {
     url('./fonts/Szlichta.woff') format('woff');
 }
 
-@font-face {
+/* @font-face {
   font-family: BuyanRegular;
   src: url('./fonts/BuyanRegular.ttf') format('ttf'),
     url('./fonts/BuyanRegular.woff') format('woff');
-}
+} */
 
 @font-face {
   font-family: Caveat-Regular;
@@ -180,11 +181,11 @@ body {
     url('./fonts/Caveat-Regular.woff') format('woff');
 }
 
-@font-face {
+/* @font-face {
   font-family: grunge;
   src: url('./fonts/grunge.ttf') format('ttf'),
     url('./fonts/grunge.woff') format('woff');
-}
+} */
 
 @font-face {
   font-family: MarckScript-Regular;
