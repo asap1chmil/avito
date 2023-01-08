@@ -26,7 +26,7 @@ function Layout({ title, children, user }) {
         <NavBar user={user} />
 
         <div className="jumbotron p-3 p-md-5 text-white rounded bg-secondary">
-        <div className="col-md-6 px-0">
+        <div className="textMoving">
           <h1 className="fhName">FullHouse</h1>
           <p className="slogan">Лучшее агенство недвижимости в Санкт-Петербурге!</p>
           <p className="linf-for-question"><a href="#" class="text-white font-weight-bold">Ссылка на почту?</a></p>
