@@ -17,7 +17,6 @@ function HomePage({ houses }) {
       </div>
       )}
     </Layout>
-
   );
 }
 

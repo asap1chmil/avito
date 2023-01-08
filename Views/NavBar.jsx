@@ -5,7 +5,14 @@ const LocalsContext = require('../middlewares/LocalsContext');
 module.exports = function NavBar() {
   const { user } = useContext(LocalsContext);
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  <a>Здесь должны быть шарики, установить новогоднюю мотню от Яндекс </a>
+  </div>
+
+
+    <nav className="navbar navbar-expand-lg bg-dark bg-gradient">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Cian.ru
@@ -65,5 +72,8 @@ module.exports = function NavBar() {
         </div>
       </div>
     </nav>
+
+    </div>
+
   );
 };

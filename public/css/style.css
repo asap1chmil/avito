@@ -6,3 +6,64 @@
     display: flex;
     justify-content: flex-end;
 }
+
+/* .carousel-inner{
+    background-color: red;
+} */
+
+/* .card-body{
+    background-color: #808080;
+} */
+
+/* .card{
+    background-color: cyan;
+} */
+
+/* .container-fluid{
+    background-color: aquamarine;
+} */
+
+body{
+    /* background-color: #808080; */
+    /* background: linear-gradient(90deg, #FFFFFF, #808080); */
+    background: radial-gradient(#FFFFFF, #757575);
+    color: black;
+font-family: "Szlichta";
+font-size: 120%;
+}
+
+@font-face {
+    font-family: birchctt;
+    src: url("./fonts/birchctt.ttf") format("ttf"),
+    url("./fonts/birchctt.woff") format("woff");
+}
+
+@font-face {
+    font-family: Szlichta;
+    src: url("./fonts/Szlichta.ttf") format("ttf"),
+    url("./fonts/Szlichta.woff") format("woff");
+}
+
+@font-face {
+    font-family: BuyanRegular;
+    src: url("./fonts/BuyanRegular.ttf") format("ttf"),
+    url("./fonts/BuyanRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Caveat-Regular;
+    src: url("./fonts/Caveat-Regular.ttf") format("ttf"),
+    url("./fonts/Caveat-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: grunge;
+    src: url("./fonts/grunge.ttf") format("ttf"),
+    url("./fonts/grunge.woff") format("woff");
+}
+
+@font-face {
+    font-family: MarckScript-Regular;
+    src: url("./fonts/MarckScript-Regular.ttf") format("ttf"),
+    url("./fonts/MarckScript-Regular.woff") format("woff");
+}

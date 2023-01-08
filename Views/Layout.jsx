@@ -24,7 +24,8 @@ function Layout({ title, children, user }) {
 
       <body>
         <NavBar user={user} />
-        <div className="container">{children}</div>
+        <div className="container">{children}
+         </div>
       </body>
     </html>
   );
