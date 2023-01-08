@@ -77,7 +77,8 @@
   height: 400px;
   /* background-image: url(https://www.remontbp.com/wp-content/uploads/2020/05/120-900x600.jpg); */
   /* background-image: url(https://idei.club/uploads/posts/2021-03/1616127835_47-p-temno-serie-steni-54.jpg); */
-  background-image: url(https://idei.club/uploads/posts/2021-03/1616127767_6-p-temno-serie-steni-7.jpg);
+  /* background-image: url(https://idei.club/uploads/posts/2021-03/1616127767_6-p-temno-serie-steni-7.jpg); */
+  background-image: url(../img2/homee.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -88,16 +89,24 @@
 }
 
 .mastfoot {
+    border: solid 1px green;
     color: white;
-  display: flex;
-  justify-content: center;
   font-size: 80%;
-  margin: 30px;
+  margin: 40px 0 5px 0;
+}
+
+footer{
+    border: solid 1px red ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 0 0 auto;
 }
 
 .post,
 .owls,
 .all-right {
+    color: #808080;
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-align: center;
@@ -110,10 +119,25 @@
 }
 
 body {
+    border: solid orange 1px;
   background: radial-gradient(#ffffff, #757575);
   color: black;
   font-family: 'Szlichta';
   font-size: 120%;
+  flex: 1 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.welcome-favorites{
+    color: #2a2a2a;
+    font-weight: bold;
+    margin: 30px 0 220px 0;
+    text-align: center;
 }
 
 @font-face {
