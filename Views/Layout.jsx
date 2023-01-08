@@ -25,11 +25,13 @@ function Layout({ title, children, user }) {
       <body>
         <NavBar user={user} />
 
-        <div className="jumbotron p-3 p-md-5 text-white rounded bg-secondary">
+        {/* <div class="jumbotron1 p-3 p-md-5 text-white rounded bg-secondary"> */}
+        {/* <div className="moving-text-area"> */}
+        <div class="jumbotron1">
         <div className="textMoving">
           <h1 className="fhName">FullHouse</h1>
-          <p className="slogan">Лучшее агенство недвижимости в Санкт-Петербурге!</p>
-          <p className="linf-for-question"><a href="#" class="text-white font-weight-bold">Ссылка на почту?</a></p>
+          <p className="slogan">Лучшее агенство недвижимости в Санкт-Петербурге</p>
+          {/* <p className="linf-for-question"><a href="#" class="text-white font-weight-bold">Ссылка на почту?</a></p> */}
         </div>
       </div>
 
@@ -38,10 +40,10 @@ function Layout({ title, children, user }) {
       </body>
 
       <footer className="mastfoot">
-        <div className="inner">
-          <p>Ссылка на почту <a href="https://getbootstrap.com/">ПОЧТА</a></p>
-          <p>OWLS SPb, 2023 г.</p>
-          <p>© Все права защищены</p>
+        <div className="inner-footer">
+          <p className="post">По всем вопросам: <a href="/" className="post-href">FullHouse_SPb@gmail.com</a></p>
+          <p className="owls">OWLS SPb, 2023 г.</p>
+          <p className="all-right">© Все права защищены</p>
         </div>
       </footer>
 
