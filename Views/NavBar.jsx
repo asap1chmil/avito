@@ -14,8 +14,9 @@ module.exports = function NavBar() {
 
     <nav className="navbar navbar-expand-lg bg-dark bg-gradient">
       <div className="container-fluid">
+      <img className="logo" src="Views/home-logo.svg" width="50" height="50" alt="X"></img>
         <a className="navbar-brand" href="/">
-          Cian.ru
+          FullHouse
         </a>
         <button
           className="navbar-toggler"

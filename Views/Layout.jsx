@@ -24,9 +24,27 @@ function Layout({ title, children, user }) {
 
       <body>
         <NavBar user={user} />
+
+        <div className="jumbotron p-3 p-md-5 text-white rounded bg-secondary">
+        <div className="col-md-6 px-0">
+          <h1 className="fhName">FullHouse</h1>
+          <p className="slogan">Лучшее агенство недвижимости в Санкт-Петербурге!</p>
+          <p className="linf-for-question"><a href="#" class="text-white font-weight-bold">Ссылка на почту?</a></p>
+        </div>
+      </div>
+
         <div className="container">{children}
          </div>
       </body>
+
+      <footer className="mastfoot">
+        <div className="inner">
+          <p>Ссылка на почту <a href="https://getbootstrap.com/">ПОЧТА</a></p>
+          <p>OWLS SPb, 2023 г.</p>
+          <p>© Все права защищены</p>
+        </div>
+      </footer>
+
     </html>
   );
 }

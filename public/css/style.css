@@ -7,21 +7,38 @@
     justify-content: flex-end;
 }
 
-/* .carousel-inner{
-    background-color: red;
-} */
+.container-fluid{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
-/* .card-body{
-    background-color: #808080;
-} */
+.navbar-brand{
+    letter-spacing: 2px;
+}
 
-/* .card{
-    background-color: cyan;
-} */
+.logo{
+    border: solid black 1px;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
 
-/* .container-fluid{
-    background-color: aquamarine;
-} */
+.fhName{
+    font-size: 300%;
+}
+
+.slogan{
+    font-size: 150%;
+    margin: 10px 0 10px 0;
+}
+
+.mastfoot{
+    display: flex;
+    justify-content:flex-start;
+    font-size: 80%;
+    margin: 20px;
+}
 
 body{
     /* background-color: #808080; */
