@@ -3,7 +3,11 @@ const React = require('react');
 module.exports = function Card({ house }) {
   return (
     <form action="">
-      <div id={house.id} className="card" style={{ width: '18rem', marginTop: 30 }}>
+      <div
+        id={house.id}
+        className="card"
+        style={{ width: '18rem', marginTop: 30 }}
+      >
         <div
           id="carouselExampleControls"
           className="carousel slide"
@@ -11,10 +15,13 @@ module.exports = function Card({ house }) {
         >
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="img/1.1.jpg" className="d-block w-100" alt="..." />
+              <img src={house.photo} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="img/1.3.jpg" className="d-block w-100" alt="..." />
+              <img src={house.photo2} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src={house.photo3} className="d-block w-100" alt="..." />
             </div>
           </div>
           <button
@@ -39,9 +46,7 @@ module.exports = function Card({ house }) {
 
         <div className="card-body">
           <h5 className="card-title">{house.type}</h5>
-          <p className="card-text">
-            {house.description}
-          </p>
+          <p className="card-text">{house.description}</p>
         </div>
         <ul>
           <li className="list-group-item">{house.price}</li>

@@ -16,10 +16,16 @@ module.exports = {
         allowNull: false,
       },
       price: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.TEXT,
         allowNull: false,
       },
       photo: {
+        type: Sequelize.TEXT,
+      },
+      photo2: {
+        type: Sequelize.TEXT,
+      },
+      photo3: {
         type: Sequelize.TEXT,
       },
       address: {

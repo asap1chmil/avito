@@ -39,10 +39,16 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       photo: {
+        type: DataTypes.TEXT,
+      },
+      photo2: {
+        type: DataTypes.TEXT,
+      },
+      photo3: {
         type: DataTypes.TEXT,
       },
       address: {
@@ -63,7 +69,7 @@ module.exports = (sequelize, DataTypes) => {
       sequelize,
       modelName: 'House',
       tableName: 'Houses',
-    },
+    }
   );
   return House;
 };
