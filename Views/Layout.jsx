@@ -38,8 +38,9 @@ function Layout({ title, children, user }) {
             {/* <p className="linf-for-question"><a href="#" class="text-white font-weight-bold">Ссылка на почту?</a></p> */}
           </div>
         </div>
-
-        <div className="container">{children}</div>
+<div class="wrapper-card">
+        <div className="container-cardes">{children}</div>
+</div>
       </body>
 
       <footer className="mastfoot">

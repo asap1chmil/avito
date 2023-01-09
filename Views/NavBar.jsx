@@ -579,27 +579,28 @@ module.exports = function NavBar() {
         <script src="https://www.expertplus.ru/UserFiles/Image/content/new_year/yandex-balls/script.js" defer />
       </div>
 
-      <nav className="navbar navbar-expand-lg bg-dark bg-gradient" id="nav-head">
-        <div className="container-fluid">
-          {/* <img className="logo" src="Views/clubs.png" width="50" height="50" alt="X"></img> */}
-          <img className="logo" src="public/img2/clubs.png" width="50" height="50" alt="X" />
-          <a className="navbar-brand" href="/">
-            FullHouse
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              {!user && (
+
+    <nav className="navbar navbar-expand-lg bg-dark bg-gradient" id="nav-head">
+      <div className="container-fluid">
+      {/* <img className="logo" src="Views/clubs.png" width="50" height="50" alt="X"></img> */}
+      <img className="logo" src="img2/FH2.jpg" width="50" height="50" alt="X"></img>
+        <a className="navbar-brand" href="/">
+          FullHouse
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            {!user && (
               <li className="nav-item">
                 <a className="nav-link" href="/auth/login">
                   Login
