@@ -1,11 +1,11 @@
 const React = require('react');
 
-module.exports = function Card({ house }) {
+module.exports = function FavoriteProductCard({ house }) {
   return (
     <form action="">
       <div
         id={house.id}
-        className="card"
+        className="card favorite-card"
         style={{ width: '18rem', marginTop: 30 }}
       >
         <div
@@ -53,18 +53,15 @@ module.exports = function Card({ house }) {
           <li className="list-group-item">{house.address}</li>
         </ul>
         <div className="card-body">
-          <button type="button" className="btn btn-dark">
-            Арендовать
-          </button>
           <button
             type="button"
-            className="btn btn-dark favorite-btn"
+            className="btn btn-dark delete-btn"
             style={{ marginLeft: 15 }}
           >
-            В избранное
+            Удалить
           </button>
         </div>
       </div>
     </form>
-  ); 
+  );
 };

@@ -10,13 +10,13 @@ function HomePage({ houses }) {
     <Layout>
       {' '}
       {user && (
-      <div id="blockProducts">
+      <div className="blockProducts">
         {houses.map((house) => (
           <Card key={house.id} house={house} />
         ))}
-
       </div>
       )}
+      <script src="/js/homePage.js" defer />
     </Layout>
   );
 }
