@@ -76,8 +76,8 @@ module.exports = {
       },
       {
         type: 'Комната',
-        description: 'Уютная комната в центре города',
-        price: 'от 999 руб/сут',
+        description: 'Спальное место в хостеле Эльбрус',
+        price: 'Бесплатно для студентов буткемпа',
         photo: 'img/3.7.jpg',
         photo2: 'img/3.11.jpg',
         photo3: 'img/3.24.jpg',
@@ -88,8 +88,8 @@ module.exports = {
       },
       {
         type: 'Квартира-студия',
-        description: 'Спальное место в хостеле Эльбрус',
-        price: 'Бесплатно для студентов буткемпа',
+        description: 'Уютная комната в центре города',
+        price: 'от 1999 руб/сут',
         photo: 'img/2.29.jpg',
         photo2: 'img/3.27.jpg',
         photo3: 'img/2.29.jpg',
