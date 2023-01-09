@@ -582,7 +582,7 @@ module.exports = function NavBar() {
       <nav className="navbar navbar-expand-lg bg-dark bg-gradient" id="nav-head">
         <div className="container-fluid">
           {/* <img className="logo" src="Views/clubs.png" width="50" height="50" alt="X"></img> */}
-          <img className="logo" src="public/img2/clubs.png" width="50" height="50" alt="X" />
+          <img className="logo" src="img2/FH3.jpg" width="50" height="50" alt="X" />
           <a className="navbar-brand" href="/">
             FullHouse
           </a>
