@@ -14,10 +14,10 @@ function HomePage({ houses }) {
         {houses.map((house) => (
           <Card key={house.id} house={house} />
         ))}
+
       </div>
       )}
     </Layout>
-
   );
 }
 

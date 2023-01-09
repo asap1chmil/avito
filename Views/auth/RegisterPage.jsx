@@ -59,7 +59,7 @@ module.exports = function RegisterPage({ user }) {
             autoComplete="off"
           />
         </div>
-        <button type="submit" className="btn btn-secondary">
+        <button type="submit" className="btn btn-secondary" id="btn-reg">
           Submit
         </button>
       </form>

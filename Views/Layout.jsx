@@ -22,10 +22,36 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" type="text/css" href="/css/resize.css" />
       </head>
 
+
+<div className="wrapper">
       <body>
         <NavBar user={user} />
+
+        {/* <div class="jumbotron1 p-3 p-md-5 text-white rounded bg-secondary"> */}
+        {/* <div className="moving-text-area"> */}
+        <div class="jumbotron1">
+          <div className="textMoving">
+            <h1 className="fhName">FullHouse</h1>
+            <p className="slogan">
+              Лучшее агенство недвижимости в Санкт-Петербурге
+            </p>
+            {/* <p className="linf-for-question"><a href="#" class="text-white font-weight-bold">Ссылка на почту?</a></p> */}
+          </div>
+        </div>
+
         <div className="container">{children}</div>
       </body>
+
+      <footer className="mastfoot">
+        <div className="inner-footer">
+          <p className="post">По всем вопросам: <a href="/" className="post-href">FullHouse_SPb@gmail.com</a></p>
+          <p className="owls">OWLS SPb, 2023 г.</p>
+          <p className="all-right">© Все права защищены</p>
+        </div>
+      </footer>
+
+      </div>
+      
     </html>
   );
 }

@@ -1,8 +1,230 @@
 .bodyHome {
-    background-color: white;
+  background-color: white;
 }
 
-.navbar-collapse{
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* новогодняя версия */
+.navbar{
+    border: solid 2px salmon;
+    margin-top: 0;
+    height: 170px;
+}
+
+.container-fluid {
+    border: solid 1px cyan;
+    padding-top: 110px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.b-page_newyear{
+    border: solid 5px darkviolet;
+    height: 0;
+    margin-top: -40px;
+    padding: 0;
+    width: 100vh;
+}
+
+/* #nav-head{
+    height: 100px;
+} */
+
+/* для неновогодней версии */
+/* .navbar{
+    border: solid 2px salmon;
+    margin-top: 0;
+    height: 100px;
+}
+
+.container-fluid {
+    border: solid 1px cyan;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+} */
+
+.nav-link{
+    color:#808080;
+}
+
+.nav-link:hover{
+    color:white;
+}
+
+.navbar-brand {
+    color: white;
+  font-size: 140%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px #111111;
+}
+
+.navbar-brand:hover{
+    color:#808080;
+}
+
+.logo {
+  border: solid black 1px;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+
+.fhName {
+  font-size: 400%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.textMoving {
+  height: 400px;
+  padding: 100px 0 0 50px;
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 80%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 3, 9%;
+    width: 100%;
+  }
+}
+
+.slogan {
+  font-size: 185%;
+  margin: 10px 0 10px 0;
+}
+
+.jumbotron1 {
+  color: white;
+  text-shadow: 5px 5px 5px #111111;
+  height: 400px;
+  /* background-image: url(https://www.remontbp.com/wp-content/uploads/2020/05/120-900x600.jpg); */
+  /* background-image: url(https://idei.club/uploads/posts/2021-03/1616127835_47-p-temno-serie-steni-54.jpg); */
+  /* background-image: url(https://idei.club/uploads/posts/2021-03/1616127767_6-p-temno-serie-steni-7.jpg); */
+  background-image: url(../img2/homee.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mastfoot {
+    border: solid 1px green;
+    color: white;
+  font-size: 80%;
+  margin: 40px 0 5px 0;
+}
+
+footer{
+    border: solid 1px red ;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 0 0 auto;
+}
+
+.post,
+.owls,
+.all-right {
+    color: #2a2a2a;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.post-href {
+  color: #527299;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body {
+    border: solid orange 1px;
+  background: radial-gradient(#ffffff, #757575);
+  color: black;
+  font-family: 'Szlichta';
+  font-size: 120%;
+  flex: 1 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.welcome-favorites{
+    color: #2a2a2a;
+    font-weight: bold;
+    margin: 30px 0 220px 0;
+    text-align: center;
+}
+
+#registerForm{
+    margin-top: 30px;
+}
+
+.mb-3{
+    border: solid 1px rgb(4, 192, 120);
+    color: #2a2a2a;
+    font-weight: bold;
+    /* width: 75%; */
+}
+
+#btn-reg{
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+
+
+/* @font-face {
+  font-family: birchctt;
+  src: url('./fonts/birchctt.ttf') format('ttf'),
+    url('./fonts/birchctt.woff') format('woff');
+} */
+
+@font-face {
+  font-family: Szlichta;
+  src: url('./fonts/Szlichta.ttf') format('ttf'),
+    url('./fonts/Szlichta.woff') format('woff');
+}
+
+/* @font-face {
+  font-family: BuyanRegular;
+  src: url('./fonts/BuyanRegular.ttf') format('ttf'),
+    url('./fonts/BuyanRegular.woff') format('woff');
+} */
+
+@font-face {
+  font-family: Caveat-Regular;
+  src: url('./fonts/Caveat-Regular.ttf') format('ttf'),
+    url('./fonts/Caveat-Regular.woff') format('woff');
+}
+
+/* @font-face {
+  font-family: grunge;
+  src: url('./fonts/grunge.ttf') format('ttf'),
+    url('./fonts/grunge.woff') format('woff');
+} */
+
+@font-face {
+  font-family: MarckScript-Regular;
+  src: url('./fonts/MarckScript-Regular.ttf') format('ttf'),
+    url('./fonts/MarckScript-Regular.woff') format('woff');
 }
