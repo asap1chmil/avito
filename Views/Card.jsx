@@ -2,6 +2,7 @@ const React = require('react');
 
 module.exports = function Card({ house }) {
   return (
+    <div class="container-ad">
     <form action="">
       <div
         id={house.id}
@@ -66,5 +67,7 @@ module.exports = function Card({ house }) {
         </div>
       </div>
     </form>
+
+    </div>
   ); 
 };
