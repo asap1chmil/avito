@@ -54,6 +54,7 @@ module.exports = function Card({ house }) {
           <li className="list-group-item">{house.address}</li>
         </ul>
         <div className="card-body">
+
           <button type="button" className="btn btn-dark">
             Арендовать
           </button>
@@ -64,8 +65,10 @@ module.exports = function Card({ house }) {
           >
             В избранное
           </button>
+
         </div>
-      </div>
+        </div>
+
     </form>
 
     </div>
