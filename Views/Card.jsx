@@ -67,11 +67,8 @@ module.exports = function Card({ house }) {
         </div>
       </div>
     </form>
-<<<<<<< HEAD
 
     </div>
-  ); 
-=======
+
   );
->>>>>>> b1171f53380efb3ad2bc7c9ba5f4d96e36f39fa9
 };
