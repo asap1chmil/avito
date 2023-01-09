@@ -7,7 +7,7 @@ module.exports = function Card({ house }) {
       <div
         id={house.id}
         className="card"
-        style={{ width: '18rem', marginTop: 30 }}
+        style={{ width: '18rem', margin: 30 }}
       >
         <div
           id="carouselExampleControls"
@@ -67,7 +67,11 @@ module.exports = function Card({ house }) {
         </div>
       </div>
     </form>
+<<<<<<< HEAD
 
     </div>
   ); 
+=======
+  );
+>>>>>>> b1171f53380efb3ad2bc7c9ba5f4d96e36f39fa9
 };
