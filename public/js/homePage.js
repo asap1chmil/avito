@@ -4,7 +4,7 @@ document.querySelector('.blockProducts').addEventListener('click', async (event)
     console.log('click cool');
     const favoriteBtn = event.target;
     const house = favoriteBtn.closest('.card');
-    const id = Number(house.id);
+    const id = Number(house.dataset.id);
     console.log(id);
     const response = await fetch('/card', {
       method: 'POST',
@@ -15,4 +15,24 @@ document.querySelector('.blockProducts').addEventListener('click', async (event)
     });
     const result = await response.json();
   }
+});
+
+const sort = document.querySelector('.sort');
+// const form = sort.querySelector('.form-select');
+const htmlContainer = sort.querySelector('.blockProducts');
+
+sort.querySelector('.sort-dn').addEventListener('click', async (event) => {
+  event.preventDefault();
+  console.log('click dn');
+  const res = await fetch('/dn');
+  const html = await res.text();
+  htmlContainer.innerHTML = html;
+});
+
+sort.querySelector('.sort-up').addEventListener('click', async (event) => {
+  event.preventDefault();
+  console.log('click up');
+  const res = await fetch('/up');
+  const html = await res.text();
+  htmlContainer.innerHTML = html;
 });

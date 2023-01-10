@@ -250,3 +250,7 @@ font-weight: bold;
   justify-content: space-around;
   flex-direction: row;
 }
+
+.sort {
+  margin-top: 2pc;
+}

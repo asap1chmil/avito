@@ -8,8 +8,9 @@ const mainRouter = require('./routes/main.routes');
 const loginRouter = require('./routes/login.routes');
 const registerRouter = require('./routes/register.routes');
 const logoutRouter = require('./routes/logout.routes');
-const cardRouter = require('./routes/card.routes');
+const houseRouter = require('./routes/house.routes');
 const favoritesRouter = require('./routes/favorites.router');
+const sortRouter = require('./routes/sort.routes');
 
 const app = express();
 expressConfig(app);
@@ -18,11 +19,11 @@ app.use(express.json({ exetende: true }));
 app.use('api', require('./routes/upload.routes'));
 
 app.use('/', mainRouter);
+app.use('/', sortRouter);
 app.use('/favorites', favoritesRouter);
-
 app.use('/auth', loginRouter);
 app.use('/auth', registerRouter);
-app.use('/card', cardRouter);
+app.use('/card', houseRouter);
 app.use('/auth', logoutRouter);
 const PORT = process.env.PORT ?? 3000;
 app.listen(PORT, async () => {
