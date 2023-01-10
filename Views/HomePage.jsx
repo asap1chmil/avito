@@ -1,7 +1,7 @@
 const { useContext } = require('react');
 const React = require('react');
 const LocalsContext = require('../middlewares/LocalsContext');
-const Card = require('./Card');
+const HouseContainer = require('./HouseContainer');
 const Layout = require('./Layout');
 
 function HomePage({ houses }) {
@@ -10,10 +10,12 @@ function HomePage({ houses }) {
     <Layout>
       {' '}
       {user && (
-      <div className="blockProducts">
-        {houses.map((house) => (
-          <Card key={house.id} house={house} />
-        ))}
+      <div>
+        <div className="sort">
+          <button className="sort-dn btn btn-primary">Возрастанию цены</button>
+          <button className="sort-up btn btn-primary">Убыванию цены</button>
+          <HouseContainer houses={houses} user={user} />
+        </div>
       </div>
       )}
       <script src="/js/homePage.js" defer />
