@@ -5,7 +5,7 @@ module.exports = {
       {
         type: 'Коттедж',
         description: 'Просторный красивый и удобный дом для большой компании',
-        price: 'от 25000 руб/сут',
+        price: '25000',
         photo: 'img/1.1.jpg',
         photo2: 'img/1.2.jpg',
         photo3: 'img/1.1.jpg',
@@ -17,7 +17,7 @@ module.exports = {
       {
         type: 'Дом',
         description: 'Коттедж 200м на участке 10 сот',
-        price: 'от 21000',
+        price: '21000',
         photo: 'img/1.3.jpg',
         photo2: 'img/1.8.jpg',
         photo3: 'img/1.3.jpg',
@@ -29,7 +29,7 @@ module.exports = {
       {
         type: 'Коттедж',
         description: 'Коттедж 180м на участке 5 сот',
-        price: 'от 15000',
+        price: '15000',
         photo: 'img/1.13.jpg',
         photo2: 'img/1.9.jpg',
         photo3: 'img/1.13.jpg',
@@ -53,7 +53,7 @@ module.exports = {
       {
         type: 'Квартира',
         description: 'Квартира бизнес-класса 63 кв.м',
-        price: 'от 5290 руб/сут',
+        price: '5290',
         photo: 'img/2.31.jpg',
         photo2: 'img/2.22.jpg',
         photo3: 'img/2.26.jpg',
@@ -65,7 +65,7 @@ module.exports = {
       {
         type: 'Квартира',
         description: 'Просторная видовая квартира 83 кв.м',
-        price: 'от 3290 руб/сут',
+        price: '3290',
         photo: 'img/2.33.jpg',
         photo2: 'img/2.36.jpg',
         photo3: 'img/2.33.jpg',
@@ -77,7 +77,7 @@ module.exports = {
       {
         type: 'Комната',
         description: 'Уютная комната в центре города',
-        price: 'от 999 руб/сут',
+        price: '999',
         photo: 'img/3.7.jpg',
         photo2: 'img/3.11.jpg',
         photo3: 'img/3.24.jpg',
@@ -89,7 +89,7 @@ module.exports = {
       {
         type: 'Квартира-студия',
         description: 'Спальное место в хостеле Эльбрус',
-        price: 'Бесплатно для студентов буткемпа',
+        price: '100',
         photo: 'img/2.29.jpg',
         photo2: 'img/3.27.jpg',
         photo3: 'img/2.29.jpg',
@@ -101,7 +101,7 @@ module.exports = {
       {
         type: 'Комната',
         description: 'Большая комната для двух человек',
-        price: 'от 2900 руб/сут',
+        price: '2900',
         photo: 'img/2.14.jpg',
         photo2: 'img/2.29.jpg',
         photo3: 'img/2.36.jpg',

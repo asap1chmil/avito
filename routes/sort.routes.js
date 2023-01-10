@@ -14,6 +14,7 @@ sortRouter.get('/dn', async (req, res) => {
       ['id', 'DESC'],
     ],
   });
+  console.log(houses);
   res.renderComponent(HouseContainer, { houses, user });
 });
 
@@ -29,7 +30,7 @@ sortRouter.get('/up', async (req, res) => {
       ['id', 'DESC'],
     ],
   });
-  console.log(houses);
+  // console.log(houses);
   res.renderComponent(HouseContainer, { houses, user });
 });
 

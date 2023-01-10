@@ -18,8 +18,7 @@ document.querySelector('.blockProducts').addEventListener('click', async (event)
 });
 
 const sort = document.querySelector('.sort');
-// const form = sort.querySelector('.form-select');
-const htmlContainer = sort.querySelector('.blockProducts');
+const htmlContainer = document.querySelector('.blockProducts');
 
 sort.querySelector('.sort-dn').addEventListener('click', async (event) => {
   event.preventDefault();

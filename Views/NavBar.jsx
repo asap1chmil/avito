@@ -5,7 +5,6 @@ const LocalsContext = require('../middlewares/LocalsContext');
 module.exports = function NavBar() {
   const { user } = useContext(LocalsContext);
   return (
-
     <div className="jumbotron jumbotron-fluid">
       <div className="container">
         {/* <a>Здесь должны быть шарики, установить новогоднюю мотню от Яндекс </a> */}
@@ -613,6 +612,30 @@ module.exports = function NavBar() {
                 </a>
               </li>
               )}
+              {user && !user.status && (
+              <li className="nav-item">
+                <span className="nav-link">
+                  Hello,
+                  {' '}
+                  {user.name}
+                  !
+                </span>
+              </li>
+              )}
+              {user && !user.status && (
+              <li className="nav-item">
+                <a className="nav-link" href="/favorites">
+                  Favorites
+                </a>
+              </li>
+              )}
+              {user && !user.status && (
+              <li className="nav-item">
+                <a className="nav-link" href="/auth/logout">
+                  Logout
+                </a>
+              </li>
+              )}
               {user && (
               <li className="nav-item">
                 <span className="nav-link">
@@ -623,10 +646,10 @@ module.exports = function NavBar() {
                 </span>
               </li>
               )}
-              {user && (
+              {user && user.status && (
               <li className="nav-item">
-                <a className="nav-link" href="/favorites">
-                  Favorites
+                <a className="nav-link" href="/admin">
+                  Admin Office
                 </a>
               </li>
               )}
@@ -646,3 +669,5 @@ module.exports = function NavBar() {
 
   );
 };
+
+// .status === true

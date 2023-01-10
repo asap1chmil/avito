@@ -14,8 +14,8 @@ function HomePage({ houses }) {
         <div className="sort">
           <button className="sort-dn btn btn-primary">Возрастанию цены</button>
           <button className="sort-up btn btn-primary">Убыванию цены</button>
-          <HouseContainer houses={houses} user={user} />
         </div>
+        <HouseContainer houses={houses} user={user} />
       </div>
       )}
       <script src="/js/homePage.js" defer />

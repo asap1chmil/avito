@@ -185,7 +185,6 @@ body {
     letter-spacing: 1px;
 }
 
-<<<<<<< HEAD
 .card-title{
 text-align: center;
 font-weight: bold;
@@ -198,56 +197,6 @@ font-weight: bold;
 .d-block{
   object-fit: cover;
   height: 200px;
-=======
-.d-block{
-    border: solid cyan 1px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card{
-    border: solid blue 1px;
-    height: 500px;
-}
-
-.card-body{
-    border: solid rgb(0, 109, 73) 1px;
-    background-color: palevioletred;
-}
-
-
-.container-cardes{
-    border: solid rgb(102, 255, 0) 1px;
-    /* width: 80%; */
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-}
-
-.container-ad{
-    border: solid brown 1px;
-    padding: 0 ;
-    /* margin-right: 20px; */
-}
-
-.wrapper-card{
-    border: solid pink 1px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    /* overflow: auto; */
-}
-
-.card-title{
- font-weight: bold;
- text-align: center;
-}
-
-.card-text{
-    height: 70px;
-    text-align: center;
->>>>>>> 985af4a61860e0229b73b4fa555246dbcdd05c63
 }
 
 
